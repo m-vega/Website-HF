@@ -1,0 +1,43 @@
+.mouseHover{
+    cursor:pointer;
+}
+
+.navbar {
+  background-color: transparent;
+  background: transparent;
+  border-color: transparent;  
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+nav.navbar > li > a{
+    color: black;
+}
+
+@font-face {
+    font-family: Signika;
+    src: url('../fonts/Signika-Regular.ttf');
+}
+
+.border-bottom-shadow {
+	-webkit-box-shadow: 0 10px 8px -8px #000000;
+  	-moz-box-shadow: 0 10px 8px -8px #000000;
+  	box-shadow: 0 10px 8px -8px #000000;
+  	border-bottom-color: transparent;
+}
+
+.navbar-link{
+  color: white !important;
+  text-shadow: -1px 1px #262a2b, 0 1px #262a2b, 1px 0 #262a2b, 0 -1px #262a2b !important;
+  font-size: x-large !important;
+}
+
+.navbar-link:hover{
+  color: #cf2435 !important;
+  text-shadow: none !important;
+}
+
+.dropdown-toggle{
+  background-color: transparent !important;
+}
