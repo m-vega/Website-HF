@@ -1,43 +1,90 @@
+@font-face {
+    font-family: Signika;
+    src: url('../fonts/Signika-Regular.ttf');
+}
+
+body{
+  font-family:"Signika";
+}
+
+.hfarm{
+  display: none;
+}
 .mouseHover{
     cursor:pointer;
 }
 
+.logo_header{
+  width: 350px;
+  border-radius: 0px 0px 25px 25px; 
+  background-color: #fff;
+}
+
+.carrusel{
+  padding-top: 50px;
+  }
+
+
+
+
+
+
+
+
+
 .navbar {
-  background-color: transparent;
-  background: transparent;
+  background: #B40404;
   border-color: transparent;  
-  position: absolute;
+  position: fixed;
   left: 0px;
   top: 0px;
+  box-shadow: 0 8px 8px -8px #000000;
 }
 
 nav.navbar > li > a{
     color: black;
 }
 
-@font-face {
-    font-family: Signika;
-    src: url('../fonts/Signika-Regular.ttf');
-}
-
-.border-bottom-shadow {
+.border-bottom-shadow, .logo_header{
 	-webkit-box-shadow: 0 10px 8px -8px #000000;
-  	-moz-box-shadow: 0 10px 8px -8px #000000;
-  	box-shadow: 0 10px 8px -8px #000000;
-  	border-bottom-color: transparent;
+  -moz-box-shadow: 0 10px 8px -8px #000000;
+  box-shadow: 0 10px 8px -8px #000000;
+  border-bottom-color: transparent;
 }
 
 .navbar-link{
   color: white !important;
   text-shadow: -1px 1px #262a2b, 0 1px #262a2b, 1px 0 #262a2b, 0 -1px #262a2b !important;
   font-size: x-large !important;
+  font-weight: bolder;
 }
 
 .navbar-link:hover{
-  color: #cf2435 !important;
+  color: #B40404 !important;
   text-shadow: none !important;
+  background: #fff !important;
+
 }
 
 .dropdown-toggle{
-  background-color: transparent !important;
+  background-color: none !important;
+}
+
+
+
+
+
+@media (max-width: 995px){
+  .logo_header{
+    display: none;
+    }
+}
+
+@media (max-width: 770px){
+   .hfarm{
+      display: block;
+      color: #fff !important;
+      font-size: 30pt !important;
+
+    }
 }
