@@ -61,7 +61,7 @@
                   if($count != 0){
                   $count++;
                   echo "
-                    <div class=\"col-xs-4 col-sm-4 col-md-3 col-lg-3\">
+                    <div class=\"col-xs-6 col-sm-3 col-md-3 col-lg-3\">
                      <a href=\"img/$nombredir/$archivo\" data-lightbox=\"roadtrip\" data-title=\"HeirloomFarm\" class=\"thumbnail\">
                       <img src=\"img/$nombredir/$archivo\" class=\"img-responsive\" />
                       </a>
