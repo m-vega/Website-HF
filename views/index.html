@@ -46,45 +46,39 @@
             </div>
         </div>
         <!-- /.row -->
+<!-- GALLERY OF PRODUCTS -->
 
-        <!-- Portfolio Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Our Products</h2>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="img/prod/1.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="img/prod/2.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="img/prod/1.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="img/prod/2.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="img/prod/1.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="img/prod/2.jpg" alt="">
-                </a>
-            </div>
-        </div>
-        <!-- /.row -->
+<?php
+if (isset($_GET['prod'])) {
+  $nombredir = $_GET['prod'];
+  if (file_exists("img/$nombredir")) {
+      $dir = opendir("img/$nombredir");
+      $count = 0;
+     while ($archivo = readdir($dir)) {
+          if (! is_dir($archivo)) {
+                  if($count <= 5){
+                  $count++;
+                  echo "
+                    <div class=\"col-md-2\">
+                     <a href=\"img/$nombredir/$archivo\" data-lightbox=\"roadtrip\" data-title=\"HeirloomFarm\" class=\"thumbnail\">
+                      <img src=\"img/$nombredir/$archivo\" class=\"img-responsive\" />
+                      </a>
+                    </div>
+                  ";
+                  }else{
+                    echo "</div> <!--Row End-->";
+                    echo "<div class=\"row\">";
+                    $count = 0; 
+                    }
+          }
+        } 
+  }else{
+      echo "<div class=\"alert alert-danger col-lg-7\" role=\"alert\"> <h2>No Hay Fotos sobre el Evento <b>$nombredir</b> =( </h2></div>";
+  }
+}
+?>
 
+<!-- END -->
         <!-- Features Section -->
         <div class="row">
             <div class="col-lg-12">

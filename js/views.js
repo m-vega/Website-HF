@@ -15,6 +15,6 @@ function loadContact(){
 
 function loadIndex(){
 	$("#myCarousel").show();
-	$("#content").load("views/index.html");
+	$("#content").load("views/index.php");
 }
 

@@ -20,6 +20,9 @@
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
 
+    <!-- Custom Show Images -->
+    <link href="css/lightbox.css" rel="stylesheet">
+
     <!-- Custom Fonts 
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -33,7 +36,7 @@
 </head>
 
 <body>
- <div class="Container_Carousel carrusel">
+ <div id="myCarousel" class="Container_Carousel carrusel">
             <div id="carousel-1" class="carousel slide" data-ride="carousel">
                 <!--Indicadores-->
                 <ol  class="carousel-indicators">
@@ -72,7 +75,6 @@
                 </div>
             </div>
 </div>   
-    
 <div class="container-fluid">
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -126,7 +128,7 @@
         <!-- /.container -->
     </nav>
     <!-- Header Carousel -->
-    <div style="padding-top: 40px;">
+    <div style="padding-top: 60px;">
     <!-- Page Content -->
     <div class="container" id="content">
     <!-- Dynamic content from views folder -->
@@ -143,20 +145,17 @@
 </div>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
     <!-- Script to manipulate views -->
     <script src="js/views.js"></script>
-
+    <!-- Script to show images -->
+    <script src="js/lightbox.min.js"></script>
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
     </script>
-
 </body>
-
 </html>
