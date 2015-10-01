@@ -75,7 +75,7 @@
           }
         } 
   }else{
-      echo "<div class=\"alert alert-danger col-lg-7\" role=\"alert\"> <h2>No Hay Fotos sobre el Evento <b>$nombredir</b> =( </h2></div>";
+      echo "<div class=\"alert alert-danger col-lg-7\" role=\"alert\"> <h2>No Hay Productos en el directorio <b>$nombredir</b> =( </h2></div>";
   }
 ?>
 <!-- END -->
