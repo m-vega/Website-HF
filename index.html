@@ -77,16 +77,16 @@
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span id="menu" class="icon-bar"></span>
+                    <span id="menu" class="icon-bar"></span>
+                    <span id="menu" class="icon-bar"></span>
                 </button>
                 <a class="mouseHover navbar-brand" onclick="loadIndex();" style="padding-top:0px;">
                     <div class="logo_header">
                         <img class="img-responsive" src="img/logo_xs.png" > 
                     </div>
-                     <a class="hfarm navbar-brand" href="#">
-                     <b>Heirloom</b>Farm</a>
+                     <a class="hfarm navbar-brand" href="index.html">
+                     <b>Heirloom</b>Farms</a>
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -121,8 +121,12 @@
         </div>
         <!-- /.container -->
     </nav>
-    <!-- Header Carousel -->
-    <div style="padding-top: 60px;">
+    <!-- Header Carousel 
+    <div class="container-fluid" id="coverabout">
+        <img src="img/s1.jpg" class="img-responsive">
+    </div>
+    -->
+    <div id="contentop" style="padding-top: 60px;">
     <!-- Page Content -->
     <div class="container" id="content">
     <!-- Dynamic content from views folder -->
@@ -149,9 +153,16 @@
     <script src="js/scrolling-nav.js"></script>
     <!-- Script to Activate the Carousel -->
     <script>
+        $(document).on('click','.navbar-collapse.in',function(e) {
+        if( $(e.target).is('a') ) {
+            $(this).collapse('hide');
+        }
+        });
+
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
     </script>
+
 </body>
 </html>

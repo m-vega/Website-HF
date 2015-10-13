@@ -10,6 +10,7 @@ body{
 .hfarm{
   display: none;
 }
+
 .mouseHover{
     cursor:pointer;
 }
@@ -64,30 +65,88 @@ nav.navbar > li > a{
   background-color: none !important;
 }
 
+#coverabout{
+   background-attachment: fixed;
+    background-size: cover !important;
+} 
 
 
-@media (max-width: 995px){
+#map{
+
+  border: 2px solid #E6E6E6 !important;
+
+}
+/*///////////////////////////RESPONSIVE//////////////////////////////////*/
+
+
+ /* Responsive para dispositivos Medianos*/
+@media (max-width: 992px){
   .logo_header{
     display: none;
     }
+
+    #contentop{
+      padding-top: 10px !important;
+    }
 }
 
-@media (max-width: 770px){
+ /* Responsive para dispositivos moviles*/
+@media (max-width: 768px){ 
+
    .hfarm{
       display: block;
       color: #fff !important;
-      font-size: 30pt !important;
+      font-size: 28pt !important;
     }
 
     .navbar {
-        padding: 0 0 15px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
+      background: #B40404;
     }
 
-    .top-nav-collapse {
-      padding: 0px;
-        background: #B40404;
+   .navbar-link{
+      font-size: 12pt !important;
     }
+
+   .navbar-link:hover{
+      color: #B40404 !important;
+      background: #f3f3f3 !important;
+    }
+
+    .carrusel{
+      padding-top: 50px;
+    }
+
+    #contentop{
+      padding-top: 0px !important;
+    }
+
+    #tophf{
+      padding-top: 55px !important;
+    }
+}
+
+@media (max-width: 400px){
+  
+   .hfarm{
+      color: #fff !important;
+      font-size: 20pt !important;
+    }
+
+    .carrusel{
+      padding-top: 50px;
+    }
+
+    #contentop{
+      padding-top: 0px !important;
+    }
+}
+
+@media (max-width: 250px){
+  .hfarm{
+      font-size: 13pt !important;
+    }
+  #menu{
+    margin: 2px;
+    padding: 0px;
+  }
 }
