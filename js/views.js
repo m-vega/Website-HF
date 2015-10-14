@@ -1,25 +1,33 @@
 $(document).ready(function() { 
-	loadIndex();
-	$("#coverabout").hide();
+	loadHome();
+	$("#cover").hide();
+
 
 });
 
+function loadHome(){
+	$("#myCarousel").show();
+	$("#cover").hide();
+	$("#content").load("views/home.php");
+}
+
 function loadAbout(){
 	$("#myCarousel").hide();
-	$("#coverabout").show();
+	$("#cover").show();
 	$("#content").load("views/about.html");
 	$("#about").css({"color": "#4ca64c","text-shadow": "none !important"});
 }
 
-function loadContact(){
+
+function loadProducts(){
 	$("#myCarousel").hide();
-	$("#coverabout").hide();
-	$("#content").load("views/contact.html");	
+	$("#cover").show();
+	$("#content").load("#");	
 }
 
-function loadIndex(){
-	$("#myCarousel").show();
-	$("#coverabout").hide();
-	$("#content").load("views/index.php");
+function loadContact(){
+	$("#myCarousel").hide();
+	$("#cover").show();
+	$("#content").load("views/contact.html");	
 }
 

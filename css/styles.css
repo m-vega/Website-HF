@@ -19,6 +19,9 @@ body{
   width: 270px;
   border-radius: 0px 0px 25px 25px; 
   background-color: #fff;
+  border-left: 5px solid #E6E6E6 !important;
+  border-right: 5px solid #E6E6E6 !important;
+  border-bottom: 6px solid #E6E6E6 !important;
   top: 0px;
 }
 
@@ -27,7 +30,7 @@ body{
   }
 
 .navbar {
-/*  background: #B40404;*/
+/*  background: rgb(180,4,4,0.3);*/
   background: transparent;
   border-color: transparent;  
   position: fixed;
@@ -49,25 +52,22 @@ nav.navbar > li > a{
 
 .navbar-link{
   color: white !important;
-  text-shadow: -1px 1px #262a2b, 0 1px #262a2b, 1px 0 #262a2b, 0 -1px #262a2b !important;
+  text-shadow: -1px 1px #262a2b, 0 1px #262a2b, 2px 0 #262a2b, 0 -1px #262a2b !important;
   font-size: x-large !important;
   font-weight: bolder;
 }
 
 .navbar-link:hover{
-  color: #B40404 !important;
-  text-shadow: none !important;
- /* background: #fff !important;*/
-
+  text-shadow: -1px 1px #262a2b, 0 1px #262a2b, 3px 0 #262a2b, 0 -1px #262a2b !important;
 }
 
 .dropdown-toggle{
   background-color: none !important;
 }
 
-#coverabout{
-   background-attachment: fixed;
-    background-size: cover !important;
+#cover{
+   margin: 0px;
+   padding: 0px;
 } 
 
 
