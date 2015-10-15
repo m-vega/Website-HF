@@ -15,7 +15,7 @@ function loadAbout(){
 	$("#myCarousel").hide();
 	$("#cover").show();
 	$("#content").load("views/about.html");
-	$("#about").css({"color": "#4ca64c","text-shadow": "none !important"});
+//	$("#about").css({"color": "#4ca64c","text-shadow": "none !important"});
 }
 
 
@@ -27,7 +27,8 @@ function loadProducts(){
 
 function loadContact(){
 	$("#myCarousel").hide();
-	$("#cover").show();
+
+	$("#covercontact").show();
 	$("#content").load("views/contact.html");	
 }
 

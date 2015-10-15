@@ -20,8 +20,7 @@
     <link href="css/scrolling-nav.css" rel="stylesheet">
     
     <!-- Custom Fonts 
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -30,10 +29,7 @@
     <![endif]-->
 </head>
 <body>
-
-<div id="cover" class="container-fluid">
-    <img src="img/coverabout.jpg" class="img-responsive">
-</div>  
+<div id="cover"></div>
  <div id="myCarousel" class="Container_Carousel carrusel">
             <div id="carousel-1" class="carousel slide" data-ride="carousel">
                 <!--Indicadores-->
@@ -62,18 +58,17 @@
                             <h2>Our Fields</h2>
                         </div>
                     </div>
-                    <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
+                    <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev" style="height: 100% !important; background: none !important;">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">Anterior</span>
                     </a>
-                    <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
+                    <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next" style="height: 100% !important; background: none !important;">
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">Siguiente</span>
                     </a>
                 </div>
             </div>
 </div>
-
 <div class="container-fluid">
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -126,28 +121,31 @@
         </div>
         <!-- /.container -->
     </nav>
+</div>
     <!-- Header Carousel 
     <div class="container-fluid" id="coverabout">
         <img src="img/s1.jpg" class="img-responsive">
     </div>
     -->
-    <div id="contentop" style="padding-top: 60px;">
     <!-- Page Content -->
-    <div class="container" id="content">
-    <!-- Dynamic content from views folder -->
+
+<div class="container-fluid home1">
+    <div class="container " id="content">
+            <!-- Dynamic content from views folder -->
     </div>
-    <!-- /.container -->
-    <footer>
+</div>
+<div class="container-fluid footer">
+<footer>
             <div class="row">
                 <div class="col-lg-12">
                     <p>Copyright &copy; Heirloom Farms 2015</p>
                 </div>
             </div>
-        </footer>
-    </div>
+</footer>
 </div>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
     <!-- Script to manipulate views -->
@@ -167,7 +165,16 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
+    
     </script>
+<!--
+<script>
+jQuery("#carrusel").backstretch([
+        "img/s1.jpg"
+      , "img/s2.jpg"
+      , "img/s3.jpg"
+    ], {duration: 4000, fade: 1000});
+</script>-->
 
 </body>
 </html>

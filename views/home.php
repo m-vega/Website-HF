@@ -1,50 +1,52 @@
         <!-- Marketing Icons Section -->
+<div class="container home">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header" style="text-align: center !important;">
+                <h1 class="page-header" style="text-align: center !important; font-size: 3em !important;">
+                    <hr>
                     Welcome to Heirloom Farms
                 </h1>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-book"></i> Story of Our Company</h4>
+                    <div class="panel-heading encabezado">
+                        <h4>Philosofhy</h4>
                     </div>
                     <div class="panel-body">
                         <p>
                           Our philosophy is driven by the desire to attract and meet the demand of our customers, constantly generating quality products and greater social development.   
                         </p>
-                        <a href="#" class="btn btn-default">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
+                    <div class="panel-heading encabezado">
                         <h4><i class="fa fa-check"></i> Mission</h4>
                     </div>
                     <div class="panel-body">
                         <p>
                             We are a company driven by our mission. We believe that our success depends on continuous and absolute dedication drives us and encourages us to create innovative products of the highest quality to serve the important needs of our customers. We believe that our philosophy allows us to build a company that improves the lives of all stakeholders - our customers, employees, partners, suppliers, families, and communities
                         </p>
-                        <a href="#" class="btn btn-default">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
+                    <div class="panel-heading encabezado">
                         <h4><i class="fa fa-eye"></i> Vision</h4>
                     </div>
                     <div class="panel-body">
                         <p>
                             It is recognized as an agricultural company high marks for performance and efficient production and marketing of our improving our productivity and profitability products. We want to create a heritage that is productive for all our customers, our company, our employees and the countries to which we project export.
                         </p>
-                        <a href="#" class="btn btn-default">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
+</div>
+
+
         <!-- /.row -->
 <!-- GALLERY OF PRODUCTS -->
 <div class="col-lg-12">
@@ -103,5 +105,6 @@
         </div>
         <!-- /.row -->
         <hr>
-
-       
+        <script >
+        jQuery(".home").backstretch("img/.jpg");
+        </script>

@@ -16,7 +16,7 @@ body{
 }
 
 .logo_header{
-  width: 270px;
+  width: 300px;
   border-radius: 0px 0px 25px 25px; 
   background-color: #fff;
   border-left: 5px solid #E6E6E6 !important;
@@ -65,17 +65,51 @@ nav.navbar > li > a{
   background-color: none !important;
 }
 
-#cover{
-   margin: 0px;
-   padding: 0px;
-} 
 
+#cover{
+  padding: 0px !important; 
+  margin: 0px !important;
+  width: auto !important; height: 150px;
+}
+
+.home{
+  background-color: transparent;
+}
+
+.home1{
+  background-color: #fcfcfc;
+}
 
 #map{
-
   border: 2px solid #E6E6E6 !important;
-
 }
+
+.panel{
+  height: auto !important;
+  background-color: #F2F2F2 !important;
+}
+.panel-body > p{
+  font-size:  11pt;
+  font-weight: lighter !important;
+  font-family: fantasy;
+  text-align: justify;
+}
+.panel-heading > h4{
+  color:  white !important;
+  text-align: center !important;
+}
+
+.encabezado{
+  background-color: #FE9A2E !important;
+}
+
+.footer{
+  background: #282A2B;
+  color: #FAFAFA;
+  text-align: center;
+}
+
+
 /*///////////////////////////RESPONSIVE//////////////////////////////////*/
 
 
@@ -86,7 +120,7 @@ nav.navbar > li > a{
     }
 
     #contentop{
-      padding-top: 10px !important;
+      padding-top: 0px !important;
     }
 }
 
@@ -105,11 +139,13 @@ nav.navbar > li > a{
 
    .navbar-link{
       font-size: 12pt !important;
+      color: white;
     }
 
    .navbar-link:hover{
-      color: #B40404 !important;
+      color: #1C1C1C !important;
       background: #f3f3f3 !important;
+      text-shadow: none !important;
     }
 
     .carrusel{
@@ -120,7 +156,7 @@ nav.navbar > li > a{
       padding-top: 0px !important;
     }
 
-    #tophf{
+    #cover{
       padding-top: 55px !important;
     }
 }
