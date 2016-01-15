@@ -29,7 +29,6 @@
     <![endif]-->
 </head>
 <body>
-<div id="cover"></div>
  <div id="myCarousel" class="Container_Carousel carrusel">
             <div id="carousel-1" class="carousel slide" data-ride="carousel">
                 <!--Indicadores-->
@@ -85,7 +84,7 @@
                     <div class="logo_header">
                         <img class="img-responsive" src="img/logo_xs.png" > 
                     </div>
-                     <a class="hfarm navbar-brand" href="index.html">
+                     <a onclick="loadHome();" class="hfarm navbar-brand">
                      <b>Heirloom</b>Farms</a>
                 </a>
             </div>
@@ -118,7 +117,7 @@
     -->
     <!-- Page Content -->
 
-<div class="container-fluid home1">
+<div class="container-fluid home1" style="padding-top: 5%;">
     <div class="container " id="content">
             <!-- Dynamic content from views folder -->
     </div>
@@ -137,12 +136,12 @@
     <script src="js/jquery.backstretch.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
-    <!-- Script to manipulate views -->
-    <script src="js/views.js"></script>
     <!-- Script to show images -->
     <script src="js/lightbox.min.js"></script>
     <!-- Effect scroll down -->
     <script src="js/scrolling-nav.js"></script>
+    <!-- Script to manipulate views -->
+    <script src="js/views.js"></script>
     <!-- Script to Activate the Carousel -->
     <script>
         $(document).on('click','.navbar-collapse.in',function(e) {
