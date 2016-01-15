@@ -1,0 +1,73 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="page-header">Gallery</h1>
+        <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Gallery</li>
+        </ol>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/tiksluscarousel.js"></script>
+<script type="text/javascript" src="js/rainbow.min.js"></script>
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/tiksluscarousel.css" />
+<link rel="stylesheet" href="css/github.css" />
+<link rel="stylesheet" href="css/animate.css" />
+    
+<style>
+body{
+padding:20px;
+}
+#wrapper{
+margin:auto;
+width:80%;
+}
+a{
+text-decoration:none;
+color: cornflowerblue;
+}
+a:hover{
+text-decoration:underline;
+}
+#fruits{
+border:10px solid #000;
+}
+</style>
+
+<div id="wrapper" align="center">
+
+    <div id="products">
+        <ul>
+            <li><img src="img/productos/cherry_heirloom.jpg" /></li>
+            <li><img src="img/productos/cherryheirloom.jpg" /></li>
+            <li><img src="img/productos/heirloom.jpg" /></li>
+            <li><img src="img/productos/pineapplemarvel.jpg" /></li>
+            <li><img src="img/productos/redtomato.jpg" /></li>
+            <li><img src="img/productos/vineripe.jpg" /></li>
+            <li><img src="img/productos/yellowcherry.jpg" /></li>
+		</ul>
+        
+    </div>
+    
+    <script language="javascript">
+        setTimeout(function(){
+            $("#products").tiksluscarousel({width:640,height:480,nav:'thumbnails',type:'rotate'});
+        }, 1);
+    </script>
+    
+</div>
+
+<div class="row" align="Center">
+    <div class="col-md-12">
+        <ol class="breadcrumb">
+            <li>Facilities</li>
+            <li>Tomato Cherry</li>
+            <li>Tomato Pear</li>
+            <li>Tomato Grape</li>
+        </ol>
+    </div>
+</div>
+
+ <hr>
