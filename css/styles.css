@@ -79,10 +79,10 @@ nav.navbar > li > a{
 }
 
 
-#cover{
+#headcover{
   padding: 0px !important; 
   margin: 0px !important;
-  width: auto !important; height: 150px;
+  height: 400px;
 }
 
 .home{
@@ -130,11 +130,13 @@ nav.navbar > li > a{
   .logo_header{
     display: none;
     }
+    
 
     #contentop{
       padding-top: 0px !important;
     }
 }
+
 
  /* Responsive para dispositivos moviles*/
 @media (max-width: 768px){ 
@@ -168,7 +170,7 @@ nav.navbar > li > a{
       padding-top: 0px !important;
     }
 
-    #cover{
+    #headcover{
       padding-top: 55px !important;
     }
 }
@@ -198,3 +200,10 @@ nav.navbar > li > a{
     padding: 0px;
   }
 }
+/*
+
+@media (min-width: 1900px){
+ #myCarousel{
+  display: none;
+ }
+}*/
