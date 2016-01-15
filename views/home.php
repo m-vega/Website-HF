@@ -10,7 +10,7 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading encabezado">
-                        <h4>Philosofhy</h4>
+                        <h4>Philosophy</h4>
                     </div>
                     <div class="panel-body">
                         <p>

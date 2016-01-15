@@ -1,8 +1,6 @@
 $(document).ready(function() { 
 	loadHome();
 	$("#cover").hide();
-
-
 });
 
 function loadHome(){
@@ -27,8 +25,13 @@ function loadProducts(){
 
 function loadContact(){
 	$("#myCarousel").hide();
-
 	$("#covercontact").show();
 	$("#content").load("views/contact.html");	
+}
+
+function loadGallery(){
+	$("#myCarousel").hide();
+	$("#cover").show();
+	$("#content").load("views/gallery.html");
 }
 
