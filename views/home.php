@@ -54,7 +54,7 @@
 </div>
 <div class="row"><!--Row 1-->
 <?php
-  $nombredir = 'productos';
+  $nombredir = 'products';
   if (file_exists("../img/".$nombredir)) {
       $dir = opendir("../img/".$nombredir);
       $count = 1;

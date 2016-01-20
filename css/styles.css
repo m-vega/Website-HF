@@ -7,6 +7,16 @@ body{
   font-family:"Signika";
 }
 
+.product{
+  border-style: ridge;
+  padding: 5px;
+}
+
+.product-img{
+  height: 100px;
+  width: 100px;
+}
+
 .facebook-logo{
   height: 28px;
   width: 28px;

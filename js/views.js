@@ -39,7 +39,7 @@ function loadAbout(){
 function loadProducts(){
 	$("#myCarousel").hide();
 	$("#headcover").hide();
-	$("#content").load("#");
+	$("#content").load("views/products.html");
 	$(window).scroll(function() {$(".navbar-fixed-top").addClass("top-nav-collapse");});	
 }
 
