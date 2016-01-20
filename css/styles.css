@@ -9,12 +9,13 @@ body{
 
 .product{
   border-style: ridge;
-  padding: 5px;
+  margin-bottom: 1%;
 }
 
 .product-img{
-  height: 100px;
-  width: 100px;
+  height: 100%;
+  width: 100%;
+  margin: 3%;
 }
 
 .facebook-logo{
