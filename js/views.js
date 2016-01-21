@@ -51,9 +51,9 @@ function loadContact(){
 }
 
 function loadGallery(){
-	/*$("#myCarousel").hide();
+	$("#myCarousel").hide();
 	$("#headcover").hide();
 	$("#content").load("views/gallery.html");
-	$(window).scroll(function() {$(".navbar-fixed-top").addClass("top-nav-collapse");});*/
+	$(window).scroll(function() {$(".navbar-fixed-top").addClass("top-nav-collapse");});
 }
 

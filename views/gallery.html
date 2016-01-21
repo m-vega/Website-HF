@@ -17,9 +17,7 @@
 <link rel="stylesheet" href="css/animate.css" />
     
 <style>
-body{
-padding:20px;
-}
+
 #wrapper{
 margin:auto;
 width:80%;
@@ -31,17 +29,17 @@ color: cornflowerblue;
 a:hover{
 text-decoration:underline;
 }
-#fruits{
+#product{
 border:10px solid #000;
 }
 </style>
 
 <div id="wrapper" align="center">
 
-    <div id="products">
+    <div id="product">
         <ul>
-            <li><img src="img/productos/cherry_heirloom.jpg" /></li>
-            <li><img src="img/productos/cherryheirloom.jpg" /></li>
+            <li><img src="img/productos/cherry_heirloom.jpg"/></li>
+            <li><img src="img/productos/cherryheirloom.jpg" caption="PRODUCTS"/></li>
             <li><img src="img/productos/heirloom.jpg" /></li>
             <li><img src="img/productos/pineapplemarvel.jpg" /></li>
             <li><img src="img/productos/redtomato.jpg" /></li>
@@ -53,7 +51,7 @@ border:10px solid #000;
     
     <script language="javascript">
         setTimeout(function(){
-            $("#products").tiksluscarousel({width:640,height:480,nav:'thumbnails',type:'rotate'});
+            $("#product").tiksluscarousel({progressBar:true,width:640,height:480,nav:'thumbnails',current:1,type:'slide'});
         }, 1);
     </script>
     
