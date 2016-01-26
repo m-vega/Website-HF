@@ -41,12 +41,12 @@ $mensaje="
 echo "Enviados";
 
 } else {
-  /*  echo '<script>
+    echo '<script>
         location.href = "../index.html";
     </script>';
-  */
+  
 
-echo "No Enviado";
+//echo "No Enviado";
 
 }
 ?>
