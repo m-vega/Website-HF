@@ -51,9 +51,10 @@ function loadContact(){
 }
 
 function loadGallery(){
-	$("#myCarousel").hide();
-	$("#headcover").hide();
-	$("#content").load("views/gallery.html");
-	$(window).scroll(function() {$(".navbar-fixed-top").addClass("top-nav-collapse");});
+  $("#myCarousel").hide();
+  $("#headcover").hide();
+  $("#content").load("views/gallery.php");	
+  $(window).scroll(function() {$(".navbar-fixed-top").addClass("top-nav-collapse");});
 }
+
 
