@@ -7,6 +7,11 @@ body{
   font-family:"Signika";
 }
 
+.carousel-inner > .item > img{
+       width:1500px;
+       height:750px;
+     }
+
 .product{
   border-style: ridge;
   margin-bottom: 1%;
@@ -123,7 +128,7 @@ nav.navbar > li > a{
 }
 
 .encabezado{
-  background-color: #31698a !important;
+  background-color: #881B1F !important;
 }
 
 .footer{

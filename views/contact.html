@@ -107,7 +107,8 @@ jQuery("#cover").backstretch("img/covermap.png");
         var map = new google.maps.Map(document.getElementById('map'), {
             center: latlng,
             scrollwheel: true,
-            zoom: 12,
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.SATELLITE
         });
 
         

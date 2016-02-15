@@ -4,8 +4,10 @@
             <div class="col-lg-12">
                 <h1 style="text-align: center !important; font-size: 3em !important;">
                     Welcome to Heirloom Farms
-                    <hr>
+                    
                 </h1>
+                <h4 style="text-align: center !important; font-style: italic;">Ensenada, México</h4>
+                <hr>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
@@ -87,20 +89,38 @@
                 <h2 class="page-header">What Makes Us Best</h2>
             </div>
             <div class="col-md-6">
-                <p>The Modern Business template by Start Bootstrap includes:</p>
+                <p>This is why we are leaders in our region:</p>
                 <ul>
-                    <li><strong>Bootstrap v3.2.0</strong>
-                    </li>
-                    <li>jQuery v1.11.0</li>
-                    <li>Font Awesome v4.1.0</li>
-                    <li>Working PHP contact form with validation</li>
-                    <li>Unstyled page elements for easy customization</li>
-                    <li>17 HTML pages</li>
+                    <li><strong>Our Certifications</strong></li>
+                    
+                        <ul>
+                            <li>We are a <strong>PrimusGFS certified company</strong> from PrimusLabs for Harvest Crew and Ranch operations.</li>
+                            <li>Also part of the <strong>ANSI Accredited Program Product Certification.</strong></li>
+                        </ul>
+                    
+                    <li><strong>Innovative cropping techniques</strong></li>
+                        <ul>
+                            <li>
+                                We implement hydroponic cropping techniques to grow our products.
+                            </li>
+                        </ul>
+                    <li><strong>Top of the line technology</strong></li>
+                        <ul>
+                            <li>
+                                Computer controlled irrigation that helps us add the exact amount of water that every product needs.
+                            </li>
+                            <li>
+                                We also implement technology in other subjects such as fertilization and fumigation. 
+                            </li>
+                        </ul>
                 </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+                <p>We are driven by the desire to attract and meet the demand of our customers, constantly generating quality products and a greater social development. </p>
             </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="img/fieldus.jpg" alt="">
+            <div class="col-md-3">
+                <img class="img-responsive" src="img/logos/primus-labs-logo.png" alt="">
+            </div>
+            <div class="col-md-3">
+                <img class="img-responsive" src="img/logos/ansi-logo.png" alt="">
             </div>
         </div>
         <!-- /.row -->
