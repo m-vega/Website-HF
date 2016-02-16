@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+
+<body>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/tiksluscarousel.js"></script>
+<script type="text/javascript" src="js/rainbow.min.js"></script>
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/tiksluscarousel.css" />
+<link rel="stylesheet" href="css/github.css" />
+<link rel="stylesheet" href="css/animate.css" />
+    
+<style>
+body{
+padding:20px;
+}
+#wrapper{
+margin:auto;
+width:80%;
+}
+a{
+text-decoration:none;
+color: cornflowerblue;
+}
+a:hover{
+text-decoration:underline;
+}
+#fruits{
+border:10px solid #000;
+}
+</style>
+</head>
+<div id="wrapper">
+
+		<div id="fruits">
+			<ul>
+		<li><img src="img/productos/cherry_heirloom.jpg" /></li>
+		<li><img src="img/productos/cherryheirloom.jpg" /></li>
+		<li><img src="img/productos/heirloom.jpg" /></li>
+		<li><img src="img/productos/pineapplemarvel.jpg" /></li>
+		<li><img src="img/productos/redtomato.jpg" /></li>
+		<li><img src="img/productos/vineripe.jpg" /></li>
+		<li><img src="img/productos/yellowcherry.jpg" /></li>
+		
+		</ul>
+		</div>
+		<script language="javascript">
+		$(document).ready(function(){
+		$("#fruits").tiksluscarousel({width:640,height:480,nav:'thumbnails',current:1,type:'zoom'});
+		});
+		</script>
+		
+
+
+
+
+		
+		
+		
+</div>
+
+
+</body>
+
+
+
+
+</html>
