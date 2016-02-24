@@ -2,7 +2,7 @@
 <div class="container home">
         <div class="row">
             <div class="col-lg-12">
-                <h1 style="text-align: center !important; font-size: 3em !important;">
+                <h1 style="text-align: center !important; font-size: 4em !important;">
                     Welcome to Heirloom Farms
                     
                 </h1>
@@ -48,15 +48,15 @@
         </div>
 </div>
 
-
-        <!-- /.row -->
+<!-- /.row -->
 <!-- GALLERY OF PRODUCTS -->
+<div class="content-fluid">
 <div class="col-lg-12">
 <h2 class="page-header">Our Products</h2>
 </div>
 <div class="row"><!--Row 1-->
 <?php
-  $nombredir = 'products';
+  $nombredir = 'productos';
   if (file_exists("../img/".$nombredir)) {
       $dir = opendir("../img/".$nombredir);
       $count = 1;
@@ -82,6 +82,8 @@
       echo "<div class=\"alert alert-danger col-lg-7\" role=\"alert\"> <h2>No Hay Productos en el directorio <b>$nombredir</b> =( </h2></div>";
   }
 ?>
+</div>
+</div>
 <!-- END -->
         <!-- Features Section -->
         <div class="row">
@@ -126,5 +128,5 @@
         <!-- /.row -->
         <hr>
         <script >
-        jQuery(".home").backstretch("img/.jpg");
+        jQuery(".home").backstretch("img/*.jpg");
         </script>

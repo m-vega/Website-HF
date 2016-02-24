@@ -1,10 +1,12 @@
 $(document).ready(function() { 
 	loadHome();
 	$("#headcover").show();
+	$('.slidercontent').show();
 });
 
 function loadHome(){
 	$("#myCarousel").show();
+	$('.slidercontent').show();
 	$("#headcover").show();
 	$("#content").load("views/home.php");
 	$(window).scroll(function() {
@@ -29,22 +31,25 @@ function loadHome(){
 
 function loadAbout(){
 	$("#myCarousel").hide();
+	$('.slidercontent').hide();
 	$("#headcover").hide();
 	$("#content").load("views/about.html");
 	$(window).scroll(function() {$(".navbar-fixed-top").addClass("top-nav-collapse");});
-
 	$("#about").css({"color": "#4ca64c","text-shadow": "none !important"});
 }
 
 function loadProducts(){
 	$("#myCarousel").hide();
+	$('.slidercontent').hide();
 	$("#headcover").hide();
 	$("#content").load("views/products.html");
+
 	$(window).scroll(function() {$(".navbar-fixed-top").addClass("top-nav-collapse");});	
 }
 
 function loadContact(){
 	$("#myCarousel").hide();
+	$('.slidercontent').hide();
 	$("#headcover").hide();
 	$("#content").load("views/contact.html");	
 	$(window).scroll(function() {$(".navbar-fixed-top").addClass("top-nav-collapse");});
@@ -52,6 +57,7 @@ function loadContact(){
 
 function loadGallery(){
   $("#myCarousel").hide();
+  $('.slidercontent').hide();
   $("#headcover").hide();
   $("#content").load("views/gallery.php");	
   $(window).scroll(function() {$(".navbar-fixed-top").addClass("top-nav-collapse");});

@@ -49,7 +49,7 @@ border:10px solid #000;
     <script language="javascript">
         jQuery.noConflict();
         setTimeout(function(){
-            jQuery.get( "views/img.php", { name: 'products' } ).done(function( data ) { 
+            jQuery.get( "views/img.php", { name: 'productos' } ).done(function( data ) { 
                 data = jQuery.parseJSON( data );
                 console.log(data);
                 jQuery('#c').html(data.response);

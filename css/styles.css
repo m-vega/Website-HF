@@ -7,10 +7,17 @@ body{
   font-family:"Signika";
 }
 
+
+/**Styles for Sliders-Carousel**/
 .carousel-inner > .item > img{
-       width:1500px;
-       height:750px;
-     }
+}
+
+.slidercontent{
+  padding: 180px 10px 180px 10px;
+  background-color: black;
+}
+
+/*End Slider Style*/
 
 .product{
   border-style: ridge;
@@ -45,12 +52,12 @@ body{
 }
 
 .logo_header{
-  width: 300px;
+  width: 350px;
   border-radius: 0px 0px 25px 25px; 
   background-color: #fff;
-  border-left: 5px solid #E6E6E6 !important;
-  border-right: 5px solid #E6E6E6 !important;
-  border-bottom: 6px solid #E6E6E6 !important;
+  border-left: 5px solid #881B1F !important;
+  border-right: 5px solid #881B1F !important;
+  border-bottom: 6px solid #881B1F !important;
   top: 0px;
 }
 
@@ -82,7 +89,7 @@ nav.navbar > li > a{
 .navbar-link{
   color: white !important;
   text-shadow: -1px 1px #262a2b, 0 1px #262a2b, 2px 0 #262a2b, 0 -1px #262a2b !important;
-  font-size: x-large !important;
+  font-size: 20px !important;
   font-weight: bolder;
 }
 
@@ -101,12 +108,9 @@ nav.navbar > li > a{
   height: 400px;
 }
 
-.home{
-  background-color: transparent;
-}
-
 .home1{
   background-color: #fcfcfc;
+  padding-top: 8%;"
 }
 
 #map{
