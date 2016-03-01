@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-6">
         <h1 class="page-header">Gallery</h1>
         <ol class="breadcrumb">
             <li><a href="index.html">Home</a></li>
@@ -49,7 +49,7 @@ border:10px solid #000;
     <script language="javascript">
         jQuery.noConflict();
         setTimeout(function(){
-            jQuery.get( "views/img.php", { name: 'productos' } ).done(function( data ) { 
+            jQuery.get( "views/img.php", { name: 'products' } ).done(function( data ) { 
                 data = jQuery.parseJSON( data );
                 console.log(data);
                 jQuery('#c').html(data.response);
@@ -70,9 +70,7 @@ border:10px solid #000;
         <nav>
             <ul class="pager">
                 <li><a href="#" id="facilities" onclick="variable($(this).attr('id'))">Facilities</a></li>
-                <li><a href="#" id="tomatocherry" onclick="variable($(this).attr('id'))">Tomato Cherry</a></li>
-                <li><a href="#" id="" onclick="variable($(this).attr('id'))">Tomato Pear</a></li>
-                <li><a href="#" id="" onclick="variable($(this).attr('id'))">Tomato Grape</a></li>
+                <li><a href="#" id="products" onclick="variable($(this).attr('id'))">Products</a></li>
             </ul>
         </nav>
     </div>
