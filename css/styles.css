@@ -10,11 +10,14 @@ body{
 
 /**Styles for Sliders-Carousel**/
 .carousel-inner > .item > img{
+  height: 50%;
+  border: 3px solid #151515 !important;
 }
 
 .slidercontent{
-  padding: 110px 10px 110px 10px;
-  background-color: black;
+  padding-top: 120px;
+  height: 100%;
+  background-color: #f1f1f1;
 }
 
 /*End Slider Style*/
@@ -52,13 +55,12 @@ body{
 }
 
 .logo_header{
-  width: 350px;
+  width: 320px;
   border-radius: 0px 0px 25px 25px; 
   background-color: #fff;
   border-left: 5px solid #881B1F !important;
   border-right: 5px solid #881B1F !important;
   border-bottom: 6px solid #881B1F !important;
-  top: 0px;
 }
 
 .carrusel{
@@ -88,7 +90,7 @@ nav.navbar > li > a{
 
 .navbar-link{
   color: white !important;
-  text-shadow: -1px 1px #262a2b, 0 1px #262a2b, 2px 0 #262a2b, 0 -1px #262a2b !important;
+  text-shadow: -1px 0px #262a2b, 0 1px #262a2b, 2px 0 #262a2b, 0 -1px #262a2b !important;
   font-size: 20px !important;
   font-weight: bolder;
 }
@@ -110,7 +112,7 @@ nav.navbar > li > a{
 
 .home1{
   background-color: #fcfcfc;
-  padding-top: 8%;"
+  padding-top: 80px;
 }
 
 #map{
@@ -151,6 +153,15 @@ nav.navbar > li > a{
     display: none;
     }
     
+    .navbar {
+      background: #881B1F;
+      height: 10px;
+    }
+
+    .slidercontent{
+      padding-top: 75px;
+      height: auto;
+    }
 
     #contentop{
       padding-top: 0px !important;
@@ -168,8 +179,18 @@ nav.navbar > li > a{
     }
 
     .navbar {
-      background: #B40404;
+      background: #881B1F;
     }
+
+    .slidercontent{
+      padding-top: 10px;
+      height: auto;
+    }
+
+    .home1{
+      padding-top: 5px;
+    }
+
 
    .navbar-link{
       font-size: 12pt !important;
