@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-12">
         <h1 class="page-header">Gallery</h1>
         <ol class="breadcrumb">
             <li><a href="index.html">Home</a></li>
@@ -21,8 +21,7 @@
 
 #wrapper{
 margin:auto;
-width: 1800px;
-background-color: red;
+width: 100%;
 }
 a{
 text-decoration:none;
@@ -54,7 +53,7 @@ border:10px solid #000;
                 data = jQuery.parseJSON( data );
                 console.log(data);
                 jQuery('#c').html(data.response);
-                  $("#x").tiksluscarousel({progressBar:true,width:640,height:480,nav:'thumbnails',current:1,type:'slide',next:'>>',prev:'<<',navIcons:'false'});
+                  $("#x").tiksluscarousel({progressBar:true,width:1200,height:400,nav:'thumbnails',current:1,type:'slide',next:'>>',prev:'<<',navIcons:'false'});
             }).fail( function(xhr, textStatus, errorThrown) {
                 alert(xhr.responseText);
             });
