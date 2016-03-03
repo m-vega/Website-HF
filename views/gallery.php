@@ -21,7 +21,8 @@
 
 #wrapper{
 margin:auto;
-width:80%;
+width: 1800px;
+background-color: red;
 }
 a{
 text-decoration:none;

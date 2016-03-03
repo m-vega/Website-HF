@@ -75,7 +75,7 @@
                                 if($count<=2){
                                     echo"
                                         <div class=\"item active\">
-                                        <img src=\"img/slider/$archivo\" class=\"img-responsive\">
+                                        <img id=\"imgca\" src=\"img/slider/$archivo\" class=\"img-responsive\">
                                         <div class=\"carousel-caption hidden-xs\">
                                         </div>
                                         </div>
@@ -83,7 +83,7 @@
                                 }else{
                                     echo"
                                         <div class=\"item\">
-                                        <img src=\"img/slider/$archivo\" class=\"img-responsive\">
+                                        <img id=\"imgca\" src=\"img/slider/$archivo\" class=\"img-responsive\">
                                         <div class=\"carousel-caption hidden-xs\">
                                         </div>
                                         </div>
