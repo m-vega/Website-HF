@@ -6,14 +6,15 @@ $(document).ready(function() {
 
 function loadHome(){
 	$("#home1").css({"padding-top": "0px"});
+	$("#navi").css({"background": "transparent"});
 	$("#myCarousel").show();
 	$('.slidercontent').show();
 	$("#headcover").show();
 	$("#content").load("views/home.php");
 	$(window).scroll(function() {
                if ($(".navbar").offset().top > 50) {
-                    $("#navi").css({"background": "#881B1F"});
-                } else{
+                    $("#navi").css({"background": "#881B1F", "height": "5%"});
+                } else if($(window).width() > 768){
                     $("#navi").css({"background": "transparent"});
                 }
         });
@@ -35,7 +36,7 @@ function loadAbout(){
 	$('.slidercontent').hide();
 	$("#headcover").hide();
 	$("#content").load("views/about.html");
-	$(window).scroll(function() {$(".navbar-fixed-top").addClass("top-nav-collapse");});
+	$(window).scroll(function() {$("#navi").css({"background": "#881B1F", });});
 	$("#about").css({"color": "#4ca64c","text-shadow": "none !important"});
 	$("#home1").css({"padding-top": "100px"});
 	$("#navi").css({"background": "#881B1F"});
@@ -47,7 +48,7 @@ function loadProducts(){
 	$("#headcover").hide();
 	$("#content").load("views/products.html");
 	$("#home1").css({"padding-top": "100px"});
-	$(window).scroll(function() {$(".navbar-fixed-top").addClass("top-nav-collapse");});
+	$(window).scroll(function() {$("#navi").css({"background": "#881B1F"});});
 	$("#navi").css({"background": "#881B1F"});	
 }
 
@@ -56,7 +57,7 @@ function loadContact(){
 	$('.slidercontent').hide();
 	$("#headcover").hide();
 	$("#content").load("views/contact.html");	
-	$(window).scroll(function() {$(".navbar-fixed-top").addClass("top-nav-collapse");});
+	$(window).scroll(function() {$("#navi").css({"background": "#881B1F"});});
 	$("#home1").css({"padding-top": "100px"});
 	$("#navi").css({"background": "#881B1F"});
 }
@@ -66,7 +67,7 @@ function loadGallery(){
   $('.slidercontent').hide();
   $("#headcover").hide();
   $("#content").load("views/gallery.php");	
-  $(window).scroll(function() {$(".navbar-fixed-top").addClass("top-nav-collapse");});
+  $(window).scroll(function() {$("#navi").css({"background": "#881B1F"});});
   $("#home1").css({"padding-top": "100px"});
   $("#navi").css({"background": "#881B1F"});
 }

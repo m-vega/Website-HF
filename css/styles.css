@@ -16,12 +16,6 @@ body{
   margin: 0px;
 }
 
-.top-nav-collapse {
-        padding: 0;
-        background: #881B1F; /*#282a2b gris; #B40404 rojo;
-        border-color:#e9eaee;*/
-    }
-
 #imgca{
   margin: 0px;
   padding: 0px;
@@ -177,7 +171,7 @@ nav.navbar > li > a{
     }
     
     .navbar {
-      background: #881B1F;
+      background: #881B1F !important;
       height: 10px;
     }
 /*
