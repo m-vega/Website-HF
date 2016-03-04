@@ -6,16 +6,15 @@ $(document).ready(function() {
 
 function loadHome(){
 	$("#home1").css({"padding-top": "0px"});
-	$("#navi").css({"background": "transparent"});
 	$("#myCarousel").show();
 	$('.slidercontent').show();
 	$("#headcover").show();
 	$("#content").load("views/home.php");
 	$(window).scroll(function() {
                if ($(".navbar").offset().top > 50) {
-                    $(".navbar-fixed-top").addClass("top-nav-collapse");
+                    $("#navi").css({"background": "#881B1F"});
                 } else{
-                    $(".navbar-fixed-top").removeClass("top-nav-collapse");
+                    $("#navi").css({"background": "transparent"});
                 }
         });
     
