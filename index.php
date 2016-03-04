@@ -113,7 +113,7 @@
 -->
 <div class="container-fluid">
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav id="navi" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -155,7 +155,7 @@
     -->
     <!-- Page Content -->
 
-<div class="container-fluid home1">
+<div id="home1" class="container-fluid">
     <div class="container " id="content">
             <!-- Dynamic content from views folder -->
     </div>

@@ -28,14 +28,16 @@ body{
 /*End Slider Style*/
 
 .product{
-  border-style: ridge;
-  margin-bottom: 1%;
+  border-style: none;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .product-img{
   height: 100%;
   width: 100%;
-  margin: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .facebook-logo{
@@ -101,7 +103,11 @@ nav.navbar > li > a{
 }
 
 .navbar-link:hover{
-  text-shadow: -1px 1px #262a2b, 0 1px #262a2b, 3px 0 #262a2b, 0 -1px #262a2b !important;
+  //text-shadow: -1px 1px #262a2b, 0 1px #262a2b, 3px 0 #262a2b, 0 -1px #262a2b !important;
+  //text-decoration: underline;
+  border-top-style: solid !important;
+  border-top-color: #881B1F !important;
+  border-top-width: 5px !important;
 }
 
 .dropdown-toggle{
@@ -115,9 +121,16 @@ nav.navbar > li > a{
   height: 400px;
 }
 
-.home1{
+#home1{
   background-color: #fcfcfc;
-  padding-top: 30px;
+}
+
+#navi{
+  background: transparent;
+  border-color: transparent;  
+  position: fixed;
+  left: 0px;
+  top: 0px;
 }
 
 #map{
@@ -185,12 +198,19 @@ nav.navbar > li > a{
       font-size: 28pt !important;
     }
 
-    .navbar {
+    .navbar-collapse{
+      background-color: #881B1F;
       background: #881B1F;
     }
 
+    .navbar {
+      background: #881B1F;
+      border-bottom-width: 1px;
+      border-bottom-color: black;
+    }
+
     .slidercontent{
-      padding-top: 10px;
+      padding-top: 0px;
       height: auto;
     }
 
