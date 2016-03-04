@@ -88,7 +88,7 @@ border:10px solid #000;
                 data = jQuery.parseJSON( data );
                 console.log(data);
                 jQuery('#c').html(data.response);
-             $("#x").tiksluscarousel({progressBar:true,width:640,height:480,nav:'thumbnails',current:1,type:'slide',next:'>>',prev:'<<',navIcons:'false'});  
+             $("#x").tiksluscarousel({progressBar:true,width:1200,height:400,nav:'thumbnails',current:1,type:'slide',next:'>>',prev:'<<',navIcons:'false'});  
             }).fail( function(xhr, textStatus, errorThrown) {
                 alert(xhr.responseText);
             });
