@@ -1,3 +1,5 @@
+<meta name="apple-mobile-web-app-capable" content="yes">
+
 <div class="row">
     <div class="col-md-12">
         <h1 class="page-header">Gallery</h1>
@@ -12,6 +14,8 @@
 <script  src="js/tiksluscarousel.js"></script>
 <script src="js/rainbow.min.js"></script>
 <script src="js/jquery.js"></script>
+<script src="js/jquery.fullscreen.js"></script>
+<script src="js/jquery.fullscreen.min.js"></script>
 <link rel="stylesheet" href="css/normalize.css" />
 <link rel="stylesheet" href="css/tiksluscarousel.css" />
 <link rel="stylesheet" href="css/github.css" />
@@ -35,6 +39,7 @@ border:10px solid #000;
 }
 </style>
 
+<div id="fullscreen">
 <div id="wrapper" align="center">
 
     <!--Empieza lo de Php-->
@@ -71,9 +76,12 @@ border:10px solid #000;
             <ul class="pager">
                 <li><a href="#" id="facilities" onclick="variable($(this).attr('id'))">Facilities</a></li>
                 <li><a href="#" id="products" onclick="variable($(this).attr('id'))">Products</a></li>
+                <li><a href="#" class="requestfullscreen">Fullscreen</a></li>
             </ul>
         </nav>
     </div>
+</div>
+
 </div>
 
  <hr>
@@ -96,9 +104,38 @@ border:10px solid #000;
                 
     }
     
-  
-          
-   
-    
-    
+</script>
+
+<script type="text/javascript">
+                jQuery.noConflict();
+                jQuery(function() {
+                    // check native support
+                    jQuery('#support').text(jQuery.fullscreen.isNativelySupported() ? 'supports' : 'doesn\'t support');
+
+                    // open in fullscreen
+                    jQuery('#fullscreen .requestfullscreen').click(function() {
+                        jQuery('#fullscreen').fullscreen();
+                        return false;
+                    });
+
+                    // exit fullscreen
+                    jQuery('#fullscreen .exitfullscreen').click(function() {
+                        jQuery.fullscreen.exit();
+                        return false;
+                    });
+
+                    // document's event
+                    jQuery(document).bind('fscreenchange', function(e, state, elem) {
+                        // if we currently in fullscreen mode
+                        if (jQuery.fullscreen.isFullScreen()) {
+                            jQuery('#fullscreen .requestfullscreen').hide();
+                            jQuery('#fullscreen .exitfullscreen').show();
+                        } else {
+                            jQuery('#fullscreen .requestfullscreen').show();
+                            jQuery('#fullscreen .exitfullscreen').hide();
+                        }
+
+                        jQuery('#state').text(jQuery.fullscreen.isFullScreen() ? '' : 'not');
+                    });
+                });
 </script>
