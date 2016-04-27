@@ -58,7 +58,7 @@
                     <li><a class="mouseHover navbar-link " href="../">Home</a></li>
                     <li><a class="mouseHover navbar-link" id="about" href="../about">About Us</a></li>
                     <li><a class="mouseHover navbar-link" id="products" href="../products/">Our Products</a></li>
-                    <li><a class="mouseHover navbar-link" href="../gallery/">Gallery</a></li>
+                    <li><a class="mouseHover navbar-link" href="../gallery/index.php?name=products">Gallery</a></li>
                     <li><a class="mouseHover navbar-link" href="../contact/">Contact</a></li>
                     <li><a class="mouseHover navbar-link"><img class="facebook-logo" src="../img/images/facebook-logo.png"></a></li>
                     <li><a class="mouseHover navbar-link"><img class="instagram-logo" src="../img/images/instagram-logo.png"></a></li>
