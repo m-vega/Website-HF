@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" type="image/x-icon" href="favhf.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favhf.ico">
     <title>Heirloom Farms</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -123,22 +123,22 @@
                     <span id="menu" class="icon-bar"></span>
                     <span id="menu" class="icon-bar"></span>
                 </button>
-                <a class="mouseHover navbar-brand" onclick="loadHome();" style="padding-top:0px;">
+                <a class="mouseHover navbar-brand" href="#" style="padding-top:0px;">
                     <div class="logo_header">
                         <img class="img-responsive" src="img/logos/logo_xs.png" > 
                     </div>
-                     <a onclick="loadHome();" class="hfarm navbar-brand">
+                     <a href="index.php" class="hfarm navbar-brand">
                      <b>Heirloom</b>Farms</a>
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse .navbar-collapse.in" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right" >
-                    <li><a class="mouseHover navbar-link " onclick="loadHome();">Home</a></li>
-                    <li><a class="mouseHover navbar-link" id="about" onclick="loadAbout();">About Us</a></li>
-                    <li><a class="mouseHover navbar-link" id="products" onclick="loadProducts();">Our Products</a></li>
-                    <li><a class="mouseHover navbar-link" onclick="loadGallery();">Gallery</a></li>
-                    <li><a class="mouseHover navbar-link" onclick="loadContact();">Contact</a></li>
+                    <li><a class="mouseHover navbar-link " href="#">Home</a></li>
+                    <li><a class="mouseHover navbar-link" id="about" href="about/">About Us</a></li>
+                    <li><a class="mouseHover navbar-link" id="products" href="products/">Our Products</a></li>
+                    <li><a class="mouseHover navbar-link" href="gallery/">Gallery</a></li>
+                    <li><a class="mouseHover navbar-link" href="contact/">Contact</a></li>
                     <li><a class="mouseHover navbar-link"><img class="facebook-logo" src="img/images/facebook-logo.png"></a></li>
                     <li><a class="mouseHover navbar-link"><img class="instagram-logo" src="img/images/instagram-logo.png"></a></li>
                 </ul>
@@ -157,14 +157,143 @@
 
 <div id="home1" class="container-fluid">
     <div class="container " id="content">
-            <!-- Dynamic content from views folder -->
+                   <!-- Marketing Icons Section -->
+<div class="container home">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 style="text-align: center !important; font-size: 4em !important;">
+                    Welcome to Heirloom Farms
+                    
+                </h1>
+                <h4 style="text-align: center !important; font-style: italic;">Ensenada, México</h4>
+                <hr>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading encabezado">
+                        <h4>Philosophy</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                          Our philosophy is driven by the desire to attract and meet the demand of our customers, constantly generating quality products and a greater social development.   
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading encabezado">
+                        <h4><i class="fa fa-check"></i> Mission</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            We are a company driven by our mission. We believe that our success depends on continuous and absolute dedication. This drives us and encourages us to create innovative products of the highest quality to serve the important needs of our customers. We believe that our philosophy allows us to build a company that improves the lives of all stakeholders - our customers, employees, partners, suppliers, families, and communities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading encabezado">
+                        <h4><i class="fa fa-eye"></i> Vision</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            To be recognized as an agricultural company with high marks of performance and efficient production and marketing and to improve the productivity and profitability of our products. We want to create a heritage that is productive for all our customers, our company, our employees and the countries to which we export.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!-- /.row -->
+<!-- GALLERY OF PRODUCTS -->
+<div class="content-fluid">
+<div class="col-lg-12">
+<h2 class="page-header">Our Products</h2>
+</div>
+<div class="row"><!--Row 1-->
+<?php
+  $nombredir = 'productos';
+  if (file_exists("img/".$nombredir)) {
+      $dir = opendir("img/".$nombredir);
+      $count = 1;
+     while ($archivo = readdir($dir)) {
+          if (!is_dir($archivo)) {
+                  if($count != 0){
+                  $count++;
+                  echo "
+                    <div class=\"col-xs-6 col-sm-3 col-md-3 col-lg-3\">
+                     <a href=\"img/$nombredir/$archivo\" data-lightbox=\"roadtrip\" data-title=\"HeirloomFarm\" class=\"thumbnail\">
+                      <img src=\"img/$nombredir/$archivo\" class=\"img-responsive\" />
+                      </a>
+                    </div>
+                  ";
+                  }else{  
+                    echo "</div> <!--Row 1 End-->";
+                    echo "<div class=\"row\">";
+                    $count = 0; 
+                    }
+          }
+        } 
+  }else{
+      echo "<div class=\"alert alert-danger col-lg-7\" role=\"alert\"> <h2>No Hay Productos en el directorio <b>$nombredir</b> =( </h2></div>";
+  }
+?>
+</div>
+</div>
+<!-- END -->
+        <!-- Features Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">What Makes Us Best</h2>
+            </div>
+            <div class="col-md-6">
+                <p>This is why we are leaders in our region:</p>
+                <ul>
+                    <li><strong>Our Certifications</strong></li>
+                    
+                        <ul>
+                            <li>We are a <strong>PrimusGFS certified company</strong> from PrimusLabs for Harvest Crew and Ranch operations.</li>
+                            <li>Also part of the <strong>ANSI Accredited Program Product Certification.</strong></li>
+                        </ul>
+                    
+                    <li><strong>Innovative cropping techniques</strong></li>
+                        <ul>
+                            <li>
+                                We implement hydroponic cropping techniques to grow our products.
+                            </li>
+                        </ul>
+                    <li><strong>Top of the line technology</strong></li>
+                        <ul>
+                            <li>
+                                Computer controlled irrigation that helps us add the exact amount of water that every product needs.
+                            </li>
+                            <li>
+                                We also implement technology in other subjects such as fertilization and fumigation. 
+                            </li>
+                        </ul>
+                </ul>
+                <p>We are driven by the desire to attract and meet the demand of our customers, constantly generating quality products and a greater social development. </p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-responsive" src="img/logos/primus-labs-logo.png" alt="">
+            </div>
+            <div class="col-md-3">
+                <img class="img-responsive" src="img/logos/ansi-logo.png" alt="">
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+       
     </div>
 </div>
 <div class="container-fluid footer">
 <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Heirloom Farms 2015</p>
+                    <p>Copyright &copy; Heirloom Farms 2016</p>
                 </div>
             </div>
 </footer>
@@ -182,7 +311,9 @@
     <script src="js/views.js"></script>
     <!-- Script to Activate the Carousel -->
 
-
+    <script >
+        jQuery(".home").backstretch("img/*.jpg");
+    </script>
     <script>
         $(document).on('click','.navbar-collapse.in',function(e) {
         if( $(e.target).is('a') ) {

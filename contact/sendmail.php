@@ -2,15 +2,15 @@
 
  if(!empty($_POST['name']) AND !empty($_POST['company']) AND !empty($_POST['phone']) AND !empty($_POST['email']) AND !empty($_POST['message'])){
 
-$to ="weblivangastelum@gmail.com";
+$to ="ws@heirloom.mx";
 $headers = "Content-Type: text/html; charset=iso-8859-1\n"; 
 $headers .= "From:".$_POST['email']."\r\n";            
-$tema="Comentarios de ".$_POST['name']."\r\n";
+$tema="Comments from ".$_POST['name']."\r\n";
 $mensaje="
-<center><H1>Mensanje LivanGastelum.com </H1>
+<center><H1>Message from HeirloomFarms.mx Contact Form</H1>
 <table border='0' cellspacing='2' cellpadding='2'>
   <tr>
-    <td width='20%' align='center' bgcolor='#50d879'><strong>Nombre:</strong></td>
+    <td width='20%' align='center' bgcolor='#50d879'><strong>Name:</strong></td>
     <td width='80%' align='left' bgcolor='#d8d8d8'>$_POST[name]</td>
   </tr>
   <tr>
@@ -26,7 +26,7 @@ $mensaje="
     <td width='80%' align='left' bgcolor='#d8d8d8'>$_POST[company]</td>
   </tr>
   <tr>
-    <td align='center' bgcolor='#50d879'><strong>Mensaje:</strong></td>
+    <td align='center' bgcolor='#50d879'><strong>Message:</strong></td>
     <td align='left' bgcolor='#d8d8d8'>$_POST[message]</td>
   </tr>
 </table>
@@ -38,15 +38,12 @@ $mensaje="
         alerta("Correo enviado con exito");
     </script>';
 */
-echo "Enviados";
+echo "Sent";
 
 } else {
     echo '<script>
-        location.href = "../index.html";
+        location.href = "../";
     </script>';
-  
-
-//echo "No Enviado";
 
 }
 ?>
