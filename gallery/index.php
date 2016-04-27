@@ -78,6 +78,8 @@
     </div>
 </div>
 
+
+
 <div class="row"><!--Row 1-->
 <?php
   $nombredir = $_GET["name"];
@@ -89,9 +91,9 @@
                   if($count != 0){
                   $count++;
                   echo "
-                    <div class=\"col-xs-6 col-sm-3 col-md-3 col-lg-3\">
+                    <div class=\"col-xs-6 col-sm-3 col-md-3 col-lg-3\" >
                      <a href=\"../img/gallery/$nombredir/$archivo\" data-lightbox=\"roadtrip\" data-title=\"HeirloomFarm\" class=\"thumbnail\">
-                      <img src=\"../img/gallery/$nombredir/$archivo\" class=\"img-responsive\" />
+                      <img src=\"../img/gallery/$nombredir/$archivo\" class=\"img-responsive\" style=\"width:450px; height:350px\"/>
                       </a>
                     </div>
                   ";
@@ -156,4 +158,5 @@
 </script>
 
 </body>
+
 </html>
