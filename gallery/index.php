@@ -155,8 +155,12 @@
 /*jQuery(".slidercontent").backstretch([
         "img/bkgslider.jpg",
     ], {duration: 2000, fade: 1200});*/
+$(document).ready(function() { 
+            $(window).scroll(function() {$("#navi").css({"background": "#881B1F", });});
+            $("#about").css({"color": "#4ca64c","text-shadow": "none !important"});
+            $("#home1").css({"padding-top": "80px"});
+            $("#navi").css({"background": "#881B1F","height": "3%"});
+});
 </script>
-
 </body>
-
 </html>

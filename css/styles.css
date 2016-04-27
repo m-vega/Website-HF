@@ -84,6 +84,9 @@ body{
  /* box-shadow: 0 8px 8px -8px #000000;*/
 }
 
+
+
+
 nav.navbar > li > a{
     color: black;
 
@@ -131,6 +134,23 @@ nav.navbar > li > a{
   left: 0px;
   top: 0px;
 }
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block ;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
 
 #map{
   border: 2px solid #E6E6E6 !important;

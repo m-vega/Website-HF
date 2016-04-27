@@ -5,7 +5,7 @@ $(document).ready(function() {
 	
 	$(window).scroll(function() {
                if ($(".navbar").offset().top > 50) {
-                    $("#navi").css({"background": "#881B1F", "height": "5%"});
+                    $("#navi").css({"background": "#881B1F", "height": "3%"});
                 } else if($(window).width() > 768){
                     $("#navi").css({"background": "transparent"});
                 }
