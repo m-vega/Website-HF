@@ -381,7 +381,7 @@
         $(document).ready(function() { 
             $(window).scroll(function() {$("#navi").css({"background": "#881B1F", });});
             $("#home1").css({"padding-top": "80px"});
-            $("#navi").css({"background": "#881B1F"});
+            $("#navi").css({"background": "#881B1F", "height": "3%"});
         });
     </script>
 

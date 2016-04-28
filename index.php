@@ -134,7 +134,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse .navbar-collapse.in" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right" >
-                    <li><a class="mouseHover navbar-link " href="#">Home</a></li>
+                    <li><a class="mouseHover navbar-link" href="#">Home</a></li>
                     <li><a class="mouseHover navbar-link" id="about" href="about/">About Us</a></li>
                     <li><a class="mouseHover navbar-link" id="products" href="products/">Our Products</a></li>
                     <li><a class="mouseHover navbar-link" href="gallery/index.php?name=products">Gallery</a></li>
@@ -171,7 +171,7 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading encabezado">
-                        <h4>Philosophy</h4>
+                       <h4>Philosophy</h4>
                     </div>
                     <div class="panel-body">
                         <p>
