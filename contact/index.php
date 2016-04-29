@@ -8,16 +8,8 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="../img/favhf.ico">
     <title>Contact Us</title>
-    <!-- Bootstrap Core CSS -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="../css/modern-business.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="../css/styles.css" rel="stylesheet">
-    <!-- Custom Show Images -->
-    <link href="../css/lightbox.css" rel="stylesheet">
-    <!-- Custom Scroll Down -->
-    <link href="../css/scrolling-nav.css" rel="stylesheet">
+   <!-- LIBRERIAS CSS-->
+    <link href="../librerias.css" rel="stylesheet">
     <!-- Custom Fonts 
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

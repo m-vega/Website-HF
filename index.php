@@ -8,16 +8,10 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="../img/favhf.ico">
     <title>Heirloom Farms</title>
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet">
-    <!-- Custom Show Images -->
-    <link href="css/lightbox.css" rel="stylesheet">
-    <!-- Custom Scroll Down -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <!-- LIBRERIAS CSS-->
+    <link href="librerias.css" rel="stylesheet">
+
+   <!-- Script to Activate the Carousel -->
     <!-- Custom Fonts 
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -225,10 +219,11 @@
                   $count++;
                   echo "
                     <div class=\"col-xs-6 col-sm-3 col-md-3 col-lg-3\">
-                     <a href=\"img/$nombredir/$archivo\" data-lightbox=\"roadtrip\" data-title=\"HeirloomFarm\" class=\"thumbnail\">
-                      <img src=\"img/$nombredir/$archivo\" class=\"img-responsive\" />
-                      </a>
-                    </div>
+                        <a href=\"img/$nombredir/$archivo\" data-lightbox=\"roadtrip\" data-title=\"HeirloomFarm\">
+                        <img src=\"img/$nombredir/$archivo\" class=\"background img-responsive\" />
+                         </a>
+
+                  </div>
                   ";
                   }else{  
                     echo "</div> <!--Row 1 End-->";
@@ -243,7 +238,7 @@
 ?>
 </div>
 </div>
-<!-- END -->
+<!-- END     <img src="img/slider/slider4.jpg" class="stretch" alt="" />-->
         <!-- Features Section -->
         <div class="row">
             <div class="col-lg-12">
@@ -298,7 +293,7 @@
             </div>
 </footer>
 </div>
-    <!-- jQuery -->
+     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
@@ -309,8 +304,7 @@
     <script src="js/scrolling-nav.js"></script>
     <!-- Script to manipulate views -->
     <script src="js/views.js"></script>
-    <!-- Script to Activate the Carousel -->
-
+    
     <script >
         jQuery(".home").backstretch("img/*.jpg");
     </script>
@@ -327,10 +321,10 @@
     </script>
 
 <script>
- jQuery(".slidercontent").backstretch("img/bkgslider.jpg");
-/*jQuery(".slidercontent").backstretch([
-        "img/bkgslider.jpg",
-    ], {duration: 2000, fade: 1200});*/
+         jQuery("#").backstretch("img/slider/slider4.jpg");
+        /*jQuery(".slidercontent").backstretch([
+                "img/bkgslider.jpg",
+            ], {duration: 2000, fade: 1200});*/
 </script>
 
 </body>

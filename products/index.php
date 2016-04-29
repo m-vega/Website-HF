@@ -8,16 +8,8 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="../img/favhf.ico">
     <title>Oue Products</title>
-    <!-- Bootstrap Core CSS -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="../css/modern-business.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="../css/styles.css" rel="stylesheet">
-    <!-- Custom Show Images -->
-    <link href="../css/lightbox.css" rel="stylesheet">
-    <!-- Custom Scroll Down -->
-    <link href="../css/scrolling-nav.css" rel="stylesheet">
+   <!-- LIBRERIAS CSS-->
+    <link href="../librerias.css" rel="stylesheet">
     <!-- Custom Fonts 
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -77,63 +69,63 @@
     <!-- Page Content -->
 
 <div id="home1" class="container-fluid">
-    <div class="container " id="content">
-        <div class="row">
-    <div class="col-md-12">
-        <h1 class="page-header">Our Products</h1>
-        <ol class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
-            <li class="active">Our Products</li>
-        </ol>
+        <div class="container " id="content">
+            <div class="row">
+        <div class="col-md-12">
+            <h1 class="page-header">Our Products</h1>
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Our Products</li>
+            </ol>
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-4 product">
-        <a href="#myModal" id="openBtn" data-toggle="modal">
-            <img class="product-img" src="../img/products/cherry_heirloom.jpg">
-            <div class="panel-heading encabezado">
-                <h4>Cherry Heirloom Mix</h4>
+    <div class="row">
+        <div class="col-md-4 product">
+            <a href="#myModal" id="openBtn" data-toggle="modal">
+                <img class="product-img" src="../img/products/cherry_heirloom.jpg">
+                <div class="panel-heading encabezado">
+                    <h4>Cherry Heirloom Mix</h4>
+                </div>
+            </a>
+            <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h3 class="modal-title">How do we usually sell our products?</h3>
             </div>
-        </a>
-        <div class="modal fade" id="myModal">
-<div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h3 class="modal-title">How do we usually sell our products?</h3>
-        </div>
-        <div class="modal-body">
-          <h5 class="text-center">Cherry Heirloom Mix</h5>
-          <table class="table table-striped" id="tblGrid">
-            <thead id="tblHead">
-              <tr>
-                <th>Product</th>
-                <th>Units per box</th>
-                <th>Unit weight</th>
-                <th class="text-right">Total box weight</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>Cherry Heirloom Mix</td>
-                <td>12 pints</td>
-                <td>0.685LB / 0.311KG</td>
-                <td class="text-right">8.22LB / 3.73KG</td>
-              </tr>
-              <tr><td>Cherry Heirloom Mix</td>
-                <td>8 shells</td>
-                <td>1LB / 0.4536KG</td>
-                <td class="text-right">8LB / 3.63KG</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default " data-dismiss="modal">Close</button>
-        </div>
-                
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
+            <div class="modal-body">
+              <h5 class="text-center">Cherry Heirloom Mix</h5>
+              <table class="table table-striped" id="tblGrid">
+                <thead id="tblHead">
+                  <tr>
+                    <th>Product</th>
+                    <th>Units per box</th>
+                    <th>Unit weight</th>
+                    <th class="text-right">Total box weight</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Cherry Heirloom Mix</td>
+                    <td>12 pints</td>
+                    <td>0.685LB / 0.311KG</td>
+                    <td class="text-right">8.22LB / 3.73KG</td>
+                  </tr>
+                  <tr><td>Cherry Heirloom Mix</td>
+                    <td>8 shells</td>
+                    <td>1LB / 0.4536KG</td>
+                    <td class="text-right">8LB / 3.63KG</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default " data-dismiss="modal">Close</button>
+            </div>
+                    
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
   </div>
   <div class="col-md-4 product">
         <a href="#myModal2" id="openBtn" data-toggle="modal">

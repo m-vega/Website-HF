@@ -16,6 +16,28 @@ body{
   margin: 0px;
 }
 
+
+.background, .test{
+    width: 250px;
+    height: 140px;
+    margin: 10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    -webkit-box-shadow: 1px 1px 8px 0px rgba(16, 50, 50, 0.50);
+    -moz-box-shadow:    1px 1px 8px 0px rgba(16, 50, 50, 0.50);
+    box-shadow:         1px 1px 8px 0px rgba(16, 50, 50, 0.50);
+}
+
+
+.imgcontent{
+  background: green;
+  height: 200px;
+  width: 150px;
+}
 #imgca{
   margin: 0px;
   padding: 0px;
@@ -40,14 +62,14 @@ body{
 }
 
 .facebook-logo{
-  height: 28px;
-  width: 28px;
+  height: 25px;
+  width: 25px;
   margin-top: -5px;
 }
 
 .instagram-logo{
-  height: 30px;
-  width: 42px;
+  height: 25px;
+  width: 30px;
   margin-top: -5.5px;
   margin-left: -8px;
 }
@@ -182,6 +204,11 @@ nav.navbar > li > a{
 
 
 /*///////////////////////////RESPONSIVE//////////////////////////////////*/
+@media (max-width: 1200px){ 
+.logo_header{
+  width: 250px;
+  }
+}
 
 
  /* Responsive para dispositivos Medianos*/

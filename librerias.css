@@ -1,0 +1,41 @@
+@import url("css/bootstrap.css");
+@import url("css/modern-business.css");
+@import url("css/styles.css");
+@import url("css/lightbox.css");
+@import url("css/scrolling-nav.css");
+@import url("css/styles.css");
+@import url("js/jquery.js");
+@import url("js/jquery.js");
+@import url("js/jquery.js");
+@import url("js/bootstrap.js");
+@import url("js/lightbox.min.js");
+@import url("js/scrolling-nav.js");
+@import url("js/views.js");
+
+
+/*
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Custom Show Images -->
+    <link href="css/lightbox.css" rel="stylesheet">
+    <!-- Custom Scroll Down -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+     <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
+    <!-- Script to show images -->
+    <script src="js/lightbox.min.js"></script>
+    <!-- Effect scroll down -->
+    <script src="js/scrolling-nav.js"></script>
+    <!-- Script to manipulate views -->
+    <script src="js/views.js"></script>
+    <!-- Script to Activate the Carousel -->
+
+*/

@@ -8,16 +8,8 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="../img/favhf.ico">
     <title>Heirloom Farms</title>
-    <!-- Bootstrap Core CSS -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="../css/modern-business.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="../css/styles.css" rel="stylesheet">
-    <!-- Custom Show Images -->
-    <link href="../css/lightbox.css" rel="stylesheet">
-    <!-- Custom Scroll Down -->
-    <link href="../css/scrolling-nav.css" rel="stylesheet">
+    <!-- LIBRERIAS CSS-->
+    <link href="../librerias.css" rel="stylesheet">
 
 </head>
 <body>
@@ -61,71 +53,67 @@
         <!-- /.container -->
     </nav>
 </div>
-   
-    <!-- Page Content -->
-
-
-<br><br><br><br>
+<!-- Page Content -->
 <!-- /.row -->
 <!-- GALLERY OF PRODUCTS -->
-<div class="row">
-    <div class="col-md-12">
-        <h1 class="page-header">Gallery</h1>
-        <ol class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
-            <li class="active">Gallery</li>
-        </ol>
+<div id="home1" class="container-fluid">
+    <div class="container " id="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page-header">Gallery</h1>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">Gallery</li>
+                    </ol>
+                </div>
+            </div>
+    <div class="row"><!--Row 1-->
+    <?php
+      $nombredir = $_GET["name"];
+      if (file_exists("../img/gallery/".$nombredir)) {
+          $dir = opendir("../img/gallery/".$nombredir);
+          $count = 1;
+         while ($archivo = readdir($dir)) {
+              if (!is_dir($archivo)) {
+                      if($count != 0){
+                      $count++;
+                      echo "
+                        <div class=\"col-xs-6 col-sm-3 col-md-3 col-lg-3\" >
+                         <a href=\"../img/gallery/$nombredir/$archivo\" data-lightbox=\"roadtrip\" data-title=\"HeirloomFarm\">
+                          <img src=\"../img/gallery/$nombredir/$archivo\" class=\"background img-responsive\"/>
+                          </a>
+                        </div>
+                      ";
+                      }else{  
+                        echo "</div> <!--Row 1 End-->";
+                        echo "<div class=\"row\">";
+                        $count = 0; 
+                        }
+              }
+            } 
+      }else{
+          echo "<div class=\"alert alert-danger col-lg-7\" role=\"alert\"> <h2>No Hay Productos en el directorio <b>$nombredir</b> =( </h2></div>";
+      }
+    ?>
+    </div>
+    </div>
+    <!-- END -->
+            
+    <div class="row" align="Center">
+        <div class="col-md-12">
+            <nav>
+                <ul class="pager">
+                    <li><a href="index.php?name=facilities"  id="facilities" onclick="">Facilities</a></li>
+                    <li><a href="index.php?name=products" id="products" onclick="">Products</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    </div>
     </div>
 </div>
-
-
-
-<div class="row"><!--Row 1-->
-<?php
-  $nombredir = $_GET["name"];
-  if (file_exists("../img/gallery/".$nombredir)) {
-      $dir = opendir("../img/gallery/".$nombredir);
-      $count = 1;
-     while ($archivo = readdir($dir)) {
-          if (!is_dir($archivo)) {
-                  if($count != 0){
-                  $count++;
-                  echo "
-                    <div class=\"col-xs-6 col-sm-3 col-md-3 col-lg-3\" >
-                     <a href=\"../img/gallery/$nombredir/$archivo\" data-lightbox=\"roadtrip\" data-title=\"HeirloomFarm\" class=\"thumbnail\">
-                      <img src=\"../img/gallery/$nombredir/$archivo\" class=\"img-responsive\" style=\"width:400px;\"/>
-                      </a>
-                    </div>
-                  ";
-                  }else{  
-                    echo "</div> <!--Row 1 End-->";
-                    echo "<div class=\"row\">";
-                    $count = 0; 
-                    }
-          }
-        } 
-  }else{
-      echo "<div class=\"alert alert-danger col-lg-7\" role=\"alert\"> <h2>No Hay Productos en el directorio <b>$nombredir</b> =( </h2></div>";
-  }
-?>
 </div>
-</div>
-<!-- END -->
-        
-<div class="row" align="Center">
-    <div class="col-md-12">
-        <nav>
-            <ul class="pager">
-                <li><a href="index.php?name=facilities"  id="facilities" onclick="">Facilities</a></li>
-                <li><a href="index.php?name=products" id="products" onclick="">Products</a></li>
-            </ul>
-        </nav>
-    </div>
-</div>
-
-</div>
-</div>
-
 <div class="container-fluid footer">
 <footer>
             <div class="row">
