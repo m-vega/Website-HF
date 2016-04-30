@@ -228,6 +228,9 @@ jQuery("#cover").backstretch("img/covermap.png");
             $("#about").css({"color": "#4ca64c","text-shadow": "none !important"});
             $("#home1").css({"padding-top": "80px"});
             $("#navi").css({"background": "#881B1F","height": "3%"});
+            if($(document ).width() < 992){
+                $("#home1").css({"padding-top": "30px"});
+            }
         });
     </script>
 

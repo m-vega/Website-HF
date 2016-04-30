@@ -67,9 +67,24 @@
                     </ol>
                 </div>
             </div>
+            <div class="row" align="Center">
+        <div class="col-md-12">
+            <nav>
+                <ul class="pager">
+                    <li><a href="index.php?name=facilities"  id="facilities" onclick="">Facilities</a></li>
+                    <li><a href="index.php?name=products" id="products" onclick="">Products</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
     <div class="row"><!--Row 1-->
     <?php
-      $nombredir = $_GET["name"];
+      if(isset($_GET["name"])){
+        $nombredir = $_GET["name"];
+        }else{
+            $nombredir = "products";
+        }
+      
       if (file_exists("../img/gallery/".$nombredir)) {
           $dir = opendir("../img/gallery/".$nombredir);
           $count = 1;
@@ -98,18 +113,6 @@
     </div>
     </div>
     <!-- END -->
-            
-    <div class="row" align="Center">
-        <div class="col-md-12">
-            <nav>
-                <ul class="pager">
-                    <li><a href="index.php?name=facilities"  id="facilities" onclick="">Facilities</a></li>
-                    <li><a href="index.php?name=products" id="products" onclick="">Products</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-
     </div>
     </div>
 </div>
@@ -148,6 +151,9 @@ $(document).ready(function() {
             $("#about").css({"color": "#4ca64c","text-shadow": "none !important"});
             $("#home1").css({"padding-top": "80px"});
             $("#navi").css({"background": "#881B1F","height": "3%"});
+            if($(document ).width() < 992){
+                $("#home1").css({"padding-top": "30px"});
+            }
 });
 </script>
 </body>
