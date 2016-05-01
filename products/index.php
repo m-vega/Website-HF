@@ -7,9 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="../img/favhf.ico">
-    <title>Oue Products</title>
+    <title>Our Products</title>
    <!-- LIBRERIAS CSS-->
-    <link href="../librerias.css" rel="stylesheet">
+    <link href="../css/librerias.css" rel="stylesheet">
     <!-- Custom Fonts 
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

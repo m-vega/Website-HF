@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../img/favhf.ico">
     <title>Heirloom Farms</title>
     <!-- LIBRERIAS CSS-->
-    <link href="../librerias.css" rel="stylesheet">
+    <link href="../css/librerias.css" rel="stylesheet">
 
 </head>
 <body>

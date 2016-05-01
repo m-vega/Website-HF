@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../img/favhf.ico">
     <title>Heirloom Farms</title>
     <!-- LIBRERIAS CSS-->
-    <link href="librerias.css" rel="stylesheet">
+    <link href="css/librerias.css" rel="stylesheet">
 
    <!-- Script to Activate the Carousel -->
     <!-- Custom Fonts 
@@ -209,7 +209,7 @@
 </div>
 <div class="row"><!--Row 1-->
 <?php
-  $nombredir = 'productos';
+  $nombredir = 'products';
   if (file_exists("img/".$nombredir)) {
       $dir = opendir("img/".$nombredir);
       $count = 1;
@@ -320,12 +320,16 @@
     })
     </script>
 
-<script>
-         jQuery("#").backstretch("img/slider/slider4.jpg");
-        /*jQuery(".slidercontent").backstretch([
-                "img/bkgslider.jpg",
-            ], {duration: 2000, fade: 1200});*/
-</script>
+ <script type="text/javascript">
+        $(document).ready(function() { 
+           
+            $("#home1").css({"padding-top": "80px"});
+          
+            if($(document ).width() < 992){
+                $("#home1").css({"padding-top": "30px"});
+            }
+        });
+    </script>
 
 </body>
 </html>
