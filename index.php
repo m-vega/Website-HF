@@ -10,6 +10,7 @@
     <title>Heirloom Farms</title>
     <!-- LIBRERIAS CSS-->
     <link href="librerias.css" rel="stylesheet">
+
    <!-- Script to Activate the Carousel -->
     <!-- Custom Fonts 
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
@@ -156,6 +157,7 @@
             <div class="col-lg-12">
                 <h1 style="text-align: center !important; font-size: 4em !important;">
                     Welcome to Heirloom Farms
+                    
                 </h1>
                 <h4 style="text-align: center !important; font-style: italic;">Ensenada, México</h4>
                 <hr>
@@ -198,6 +200,7 @@
             </div>
         </div>
 </div>
+
 <!-- /.row -->
 <!-- GALLERY OF PRODUCTS -->
 <div class="content-fluid">
@@ -301,6 +304,10 @@
     <script src="js/scrolling-nav.js"></script>
     <!-- Script to manipulate views -->
     <script src="js/views.js"></script>
+    
+    <script >
+        jQuery(".home").backstretch("img/*.jpg");
+    </script>
     <script>
         $(document).on('click','.navbar-collapse.in',function(e) {
         if( $(e.target).is('a') ) {
@@ -314,12 +321,11 @@
     </script>
 
 <script>
-       /*  
-        jQuery("#").backstretch("img/slider/slider4.jpg");
-        jQuery(".slidercontent").backstretch([
+         jQuery("#").backstretch("img/slider/slider4.jpg");
+        /*jQuery(".slidercontent").backstretch([
                 "img/bkgslider.jpg",
-            ], {duration: 2000, fade: 1200});
-        */
+            ], {duration: 2000, fade: 1200});*/
 </script>
+
 </body>
 </html>

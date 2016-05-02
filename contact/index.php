@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../img/favhf.ico">
     <title>Contact Us</title>
    <!-- LIBRERIAS CSS-->
-    <link href="../librerias.css" rel="stylesheet">
+    <link href="../css/librerias.css" rel="stylesheet">
     <!-- Custom Fonts 
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -228,6 +228,9 @@ jQuery("#cover").backstretch("img/covermap.png");
             $("#about").css({"color": "#4ca64c","text-shadow": "none !important"});
             $("#home1").css({"padding-top": "80px"});
             $("#navi").css({"background": "#881B1F","height": "3%"});
+            if($(document ).width() < 992){
+                $("#home1").css({"padding-top": "30px"});
+            }
         });
     </script>
 

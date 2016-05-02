@@ -227,8 +227,6 @@ nav.navbar > li > a{
       height: auto;
     }
 */
-
-
     #contentop{
       padding-top: 0px !important;
     }
@@ -259,7 +257,7 @@ nav.navbar > li > a{
     }
 
     .home1{
-      padding-top: 5px;
+      padding-top: 0px;
     }
 
 
